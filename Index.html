@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Membuat Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <div class="container">
+   <a class="navbar-brand" href="#">My     Message App</a>
+
+<button class="navbar-toggler"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#navbarNav">
+   <span class="navbar-toggler-icon"></span>
+   
+</button>
+
+ <div class="collapse navbar-collapse"
+id="navbarNav">
+<ul class="navbar-nav ms-auto">
+  
+<li class="nav-item">
+   <a class="nav-link active" href="#">Home</a>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+ <li class="nav-item">
+    <a class="nav-link" href="#">Contact</a>
+ </li>
+ 
+</ul>
+ </div>
+
+ </div>
+    </nav>
+
+ <div class="container mt-5">
+ <div class="row g-4">
+
+   <div class="col-md-6">
+
+ <div class="card shadow">
+   
+ <div class="card-header bg-primary text-white"> Form Pesan
+ 
+ </div>
+
+ <div class="card-body">
+ <form id="messageForm">
+
+   <div class="mb-3">
+
+ <label class="form-label"> Nama
+ 
+</label>
+
+<input
+type="text"
+id="nama"
+class="form-control"
+required>
+   </div>
+
+   <div class="mb-3">
+
+ <label class="form-label"> Pesan
+ 
+ </label>
+
+ <textarea
+id="pesan"
+class="form-control"
+rows="4"
+required></textarea>
+   </div>
+
+ <button
+type="submit"
+class="btn btn-primary"> Submit
+</button>
+
+</form>
+
+ </div>
+   </div>
+
+   </div>
+
+
+   <div class="col-md-6">
+
+   <div class="card shadow">
+
+   <div class="card-header bg-success text-white"> Daftar Pesan
+   </div>
+
+  <div class="card-body">
+
+  <ul id="messageList"
+class="list-group">
+    
+  </ul>
+
+</div>
+
+</div>
+
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+</body>
+</html>
